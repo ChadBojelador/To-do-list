@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 body{
   background-color: rgb(0, 0, 0);
 
@@ -5,7 +7,7 @@ body{
 
 .heading {
   display: grid;
-  grid-template-columns: 70% 20%;
+  grid-template-columns: 60% 40%;
   background-color: rgb(0, 0, 0);
   padding-top: 8%;
   color: white;
@@ -14,22 +16,25 @@ body{
   height: 100vh ;
   width: 100vw;
   column-gap: -10%;
+  
 }
 .pic{
   height: 50%;
-  width: 115%;
+  width: 60%;
   border-radius: 100%;
   border: solid;
   border-color: white;
   border-width: 3px;
   justify-content: left;
-
+  
+}
+.lastName{
+  display: block;
 }
 .greetings{
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bolder;
   text-shadow: 7px 4px rgba(185, 177, 177, 0.705);
-  margin-right: 40%;
 }
 
 .swipe{
@@ -74,6 +79,33 @@ body{
   z-index: -1;
   justify-content: center;
   align-items: center;
+}
+@keyframes moveText{
+  0% {
+    position:relative;
+    left: 3px;
+  }
+  50%{
+    position: relative;
+    right: 3px;
+  }
+  100%{
+    position: relative;
+    left: 3px;
+  }
+}
+.animation-text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  padding: 10px;
+  max-width: 80%;
+  text-shadow: 3px 3px gray;
+  font-family: 'Passion One', sans-serif;
+  animation: moveText 2s infinite ;
 }
 #particles-js {
   position: absolute;
