@@ -1,29 +1,40 @@
 body{
   background-color: rgb(0, 0, 0);
+
 }
 
 .heading {
-  display: flex;
+  display: inline-block;
   background-color: rgb(0, 0, 0);
+  padding-top: 10%;
   justify-content: center;
-  align-items: center;
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 30px;
+  padding-left: 30px;
   margin-right: 50px;
   height: 100vh ;
+  width: 100vw;
+
+  
 }
 .greetings{
   font-size: 100px;
   font-weight: bolder;
   text-shadow: 7px 4px rgba(185, 177, 177, 0.705);
+  margin-right: 40%;
 }
+
 .swipe{
-  display: block;
   justify-content: space-around;
   text-align: center;
-  font-size: 25px;
-  text-shadow: 4px 4px rgba(185, 177, 177, 0.705);
+  font-size: 20px;
+  text-shadow: 2px 2px rgba(185, 177, 177, 0.705);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  display: flex;
+  margin-top: 30px;
+  width: 100vw;
 }
 
 
@@ -34,4 +45,21 @@ body{
   justify-content: center;
   align-items: center;
 }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 100;
+}
 
+.page3{
+  position: fixed;
+  display: flex;
+  z-index: -3;
+  justify-content: center;
+  align-items: center;
+}
