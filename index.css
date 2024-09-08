@@ -47,10 +47,14 @@ body{
   font-family: 'Courier New', Courier, monospace;
   background-color: black;
   display: grid;
-  grid-template-rows: (repeat(2,1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 100vw;
   row-gap: 20%;
   
+}
+.swipe > *:nth-child(1) {
+  grid-column: 1 / -1; 
 }
 @keyframes blink{
   0% {
