@@ -7,3 +7,11 @@ document.body.addEventListener(`click`, function(){
     titleElement.scrollIntoView({behavior:"smooth"})
   }
 });
+
+
+document.content.addEventListener(`click`, function(){
+  const md = document.getElementById(`scroll2`);
+  if(titleElement){
+    titleElement.scrollIntoView({behavior:"smooth"})
+  }
+});

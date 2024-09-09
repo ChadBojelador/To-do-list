@@ -50,3 +50,20 @@
   padding-top: 4em;
   padding-left: 10em;
 }
+
+.clickk{
+  text-align: center;
+  font-size: 1vw;
+  text-shadow: 2px 2px rgba(185, 177, 177, 0.705);
+  color: white;
+  background-color: rgb(91, 31, 31);
+  padding-top: 0px;
+  animation: blink 2s infinite;
+}
+
+.contactHead{
+  color: white; 
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  animation: glitch 8s infinite;
+}
