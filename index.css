@@ -86,12 +86,83 @@ body {
   margin: 1em auto;
 }
 
+/* Glitch animation */
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translateX(-8px);
+  }
+  10% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    transform: translateX(8px);
+  }
+  20% {
+    text-shadow: none;
+    transform: translateX(-4px);
+  }
+  30% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translateX(4px);
+  }
+  40% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    transform: translateX(-2px);
+  }
+  50% {
+    text-shadow: none;
+    transform: translateX(2px);
+  }
+  60% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translateX(-4px);
+  }
+  70% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    transform: translateX(4px);
+  }
+  80% {
+    text-shadow: none;
+    transform: translateX(-2px);
+  }
+  90% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translateX(2px);
+  }
+  100% {
+    text-shadow: none;
+    transform: translateX(0);
+  }
+}
+
 .greetings {
   font-size: 9vw;
   font-weight: bolder;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
   padding-top: 1em;
+  
 }
+
+/* Add keyframes for the stack animation if needed */
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
 
 .swipe {
   text-align: center;
@@ -142,7 +213,24 @@ body {
   color: white; 
   letter-spacing: 2px;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  animation: glitch 8s infinite;
 }
+
+
+.pic1{
+  display: flex;
+  height: 11em;
+  width: 11em;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+
+
+
 /* Media Queries */
 @media (min-width: 768px) {
   .navBar {

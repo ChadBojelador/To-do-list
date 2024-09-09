@@ -12,6 +12,41 @@
     display: block;
     margin-top: 15em;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1em;
+    font-size: 2em;
   }
+  .pic1{
+    height: 25em;
+    width: 20em;
+    justify-content: left;
+    padding-top: 3em;
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+
+}
+
+.smwT{
+  padding-left: 3em;
+  padding-top: 1em;
+}
+.content2{
+  padding-left: 6em;
+  text-align: justify;
+  text-wrap: wrap;
+  margin-right: 5em;
+  text-indent: 3em;
+}
+
+.content3{
+  color: white;
+  text-decoration: none;
+  padding-top: 4em;
+  padding-left: 10em;
 }
