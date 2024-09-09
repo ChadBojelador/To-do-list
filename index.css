@@ -1,116 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-body{
+body {
   background-color: rgb(0, 0, 0);
-
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url(gif.gif);
+  background-size: cover;
+  background-position: center center;
 }
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-weight: bold;
+
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+ 
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  letter-spacing: 1px;
+  position: relative; /* Position relative to position the pseudo-element */
+  padding-bottom: 2px; /* Add some space for the underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navBar a:after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Align the underline at the bottom of the text */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: white; /* Color of the underline */
+  transform: scaleX(0); /* Start with the underline scaled down */
+  transform-origin: bottom left; /* Scale from the right side */
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+.navBar a:hover:after {
+  transform: scaleX(1); /* Expand the underline to full width on hover */
+}
+
 
 .heading {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr;
   background-color: rgb(0, 0, 0);
-  padding-top: 8%;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-  padding-left: 50px;
-  height: 100vh ;
-  width: 100vw;
-  column-gap: -10%;
-  
+  padding: 2em 1em;
+  text-align: center;
+  background-image: url(gif.gif);
+  background-position: center center;
 }
-.pic{
-  height: 50%;
-  width: 60%;
-  border-radius: 100%;
+
+.info {
+  padding-top: 5vw;
+  font-size: 4vw;
+  display: block;
+  text-shadow: none;
+  letter-spacing: 1px;
+}
+
+.pic {
+  height: 50vmin;
+  width: 50vmin;
+  border-radius: 50%;
   border: solid;
   border-color: white;
   border-width: 3px;
-  justify-content: left;
-  
-}
-.lastName{
-  display: block;
-}
-.greetings{
-  font-size: 100px;
-  font-weight: bolder;
-  text-shadow: 7px 4px rgba(185, 177, 177, 0.705);
+  margin: 1em auto;
 }
 
-.swipe{
-  justify-content: center;
-  background-size: auto;
+.greetings {
+  font-size: 9vw;
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  padding-top: 2em;
+}
+
+.swipe {
   text-align: center;
-  font-size: 20px;
+  font-size: 2vw;
   text-shadow: 2px 2px rgba(185, 177, 177, 0.705);
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: black;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  row-gap: 20%;
-  
+  background-color: rgb(91, 31, 31);
+  padding-top: 0px;
+  animation: blink 2s infinite;
 }
-.swipe > *:nth-child(1) {
-  grid-column: 1 / -1; 
-}
-@keyframes blink{
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }  
-  100% {
-    opacity: 1;
-  }
-}
-.symbol{
-  margin-bottom: 5px;
-  animation: blink 3s infinite;
-}
-.label{
-  margin-top: -4%;
-  animation: blink 3s infinite;
+
+.symbol {
+  color: white;
+  font-size: 2em;
+  animation: blink 2s infinite;
 }
 
 
-.animation {
-  position: fixed;
-  display: flex;
-  z-index: -1;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes moveText{
-  0% {
-    position:relative;
-    left: 3px;
-  }
-  50%{
-    position: relative;
-    right: 3px;
-  }
-  100%{
-    position: relative;
-    left: 3px;
-  }
-}
-.animation-text {
-  position: absolute;
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  z-index: 2;
-  padding: 10px;
-  max-width: 80%;
-  text-shadow: 3px 3px gray;
-  font-family: 'Passion One', sans-serif;
-  animation: moveText 2s infinite ;
-}
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -122,10 +122,108 @@ body{
   z-index: 100;
 }
 
-.page3{
-  position: fixed;
-  display: flex;
-  z-index: -3;
-  justify-content: center;
-  align-items: center;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title{
+  display: block;
+  text-align: center;
+  padding-top: 2em;
+  margin-top: 5em;
+  color: white; 
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .navBar {
+    font-size: 1em;
+    padding: 1em 2em;
+  }
+
+  .heading {
+    grid-template-columns: 2fr 1fr;
+    padding: 3em 2em;
+  }
+
+  .pic {
+    height: 200px;
+    width: 200px;
+  }
+
+  .greetings {
+    font-size: 3em;
+    padding-top: 1em;
+  }
+
+  .swipe {
+    font-size: 1.5em;
+  }
+
+  .symbol {
+    font-size: 1.5em;
+  }
+
+  .label {
+    font-size: 2em;
+  }
+
+  .animation-text {
+    font-size: 2em;
+  }
+
+  /* Adjust .info font size for tablets and up */
+  .info {
+    font-size: 2vw;
+    padding-top: 4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    grid-template-columns: 3fr 1fr;
+    padding: 4em 3em;
+  }
+
+  .pic {
+    height: 250px;
+    width: 250px;
+    margin-top: 6em;
+  }
+
+  .greetings {
+    font-size: 5em;
+   
+  }
+
+  .swipe {
+    font-size: 1.2em;
+  }
+
+  .symbol {
+    font-size: 1em;
+  }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .animation-text {
+    font-size: 1.5em;
+  }
+
+  /* Adjust .info font size for large desktops */
+  .info {
+    font-size: 1.5vw;
+    padding-top: 4vw;
+  }
 }
