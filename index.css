@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  overflow-x: hidden;
+  overflow-x: ;
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -206,26 +206,65 @@ body {
 }
 
 .title{
-  display: block;
+  display: block; 
   text-align: center;
-  padding-top: 2em;
-  margin-top: 5em;
+  padding-top: 1em;
+  margin-top: 4em;
   color: white; 
   letter-spacing: 2px;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
   animation: glitch 8s infinite;
+
+  font-size: 20px;
+}
+.tt {
+display: flex;
+flex-direction: column;
 }
 
 
-.pic1{
-  display: flex;
-  height: 11em;
-  width: 11em;
+.pic1 {
   border-radius: 5px;
+  height: 40vh;
+
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.smwT {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 2px red;
+}
+
+.clickk{
+  font-size: 2em;
+}
+.content2 {
+  margin-top: -2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 10px;
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+.content3{
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
- 
+  display: flex;
 }
+
 
 
 
@@ -276,6 +315,7 @@ body {
   }
 }
 
+
 @media (min-width: 1200px) {
   .heading {
     grid-template-columns: 3fr 1fr;
@@ -290,7 +330,8 @@ body {
 
   .greetings {
     font-size: 5em;
-   
+
+    padding-top: 10px;
   }
 
   .swipe {

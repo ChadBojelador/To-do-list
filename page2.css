@@ -21,7 +21,7 @@
     justify-content: left;
     padding-top: 3em;
   }
-}
+
 
 .content{
   display: flex;
@@ -35,6 +35,7 @@
 .smwT{
   padding-left: 3em;
   padding-top: 1em;
+  font-size: 2em;
 }
 .content2{
   padding-left: 6em;
@@ -42,6 +43,7 @@
   text-wrap: wrap;
   margin-right: 5em;
   text-indent: 3em;
+  font-size: 10px;
 }
 
 .content3{
@@ -66,4 +68,5 @@
   letter-spacing: 2px;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
   animation: glitch 8s infinite;
+}
 }
