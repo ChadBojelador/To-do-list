@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  overflow-x: ;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -56,7 +56,6 @@ body {
   transform: scaleX(1); /* Expand the underline to full width on hover */
 }
 
-
 .heading {
   display: grid;
   grid-template-columns: 1fr;
@@ -65,7 +64,7 @@ body {
   padding: 2em 1em;
   text-align: center;
   background-image: url(gif.gif);
-  background-position: center center;
+  background-position: 50% 50%;
 }
 
 .info {
@@ -79,6 +78,7 @@ body {
 .pic {
   height: 50vmin;
   width: 50vmin;
+  
   border-radius: 50%;
   border: solid;
   border-color: white;

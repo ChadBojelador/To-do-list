@@ -33,24 +33,24 @@
 }
 
 .smwT{
-  padding-left: 3em;
-  padding-top: 1em;
-  font-size: 2em;
+  padding-left: 2em;
+  font-size: 3em;
+  padding-right: 4em;
 }
 .content2{
-  padding-left: 6em;
+  padding-left: 3em;
   text-align: justify;
   text-wrap: wrap;
-  margin-right: 5em;
+  margin-right: 7em;
   text-indent: 3em;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .content3{
   color: white;
   text-decoration: none;
-  padding-top: 4em;
-  padding-left: 10em;
+  padding-top: 2em;
+  margin-left: -87em;
 }
 
 .clickk{
