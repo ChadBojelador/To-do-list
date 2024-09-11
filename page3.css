@@ -102,7 +102,7 @@
 .wrapper .button:nth-child(5) span {
   color: #ff0000;
 }
-}
+
 
 
 
@@ -116,9 +116,9 @@
     font-size: 2em;
   }
   .wrapper{
-  margin-left:37em;
+  margin-left:0em;
   justify-content: space-between;
-  column-gap: ;
+
   }
 .wrapper .button {
   display: inline-block;
@@ -194,4 +194,6 @@
 .wrapper .button:nth-child(5) span {
   color: #ff0000;
 }
+
+
 }
