@@ -1,0 +1,14 @@
+h1{
+  font-size: 5vw;
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  color: white;
+  text-align: center;
+  padding-top: 30vh;
+}
+body{
+  background-image: url(gif.gif);
+  align-items: center;
+  justify-content: center;
+
+}
