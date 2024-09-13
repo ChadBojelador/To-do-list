@@ -23,7 +23,7 @@ body {
   height: auto; /* Adjust height to content */
   perspective: 1000px;
   margin-top: 16em;
-  font-size: ;
+
 }
 title h1{
   font-size: 9px;
@@ -541,9 +541,9 @@ font-size: 1.1em;
 }
 .skills {
   background-color: rgb(25, 25, 33); /* Matching the container background color */
-  padding: 1em;
+  padding: 0;
   border: 2px solid white;
-  margin-top: 0em;
+  margin-top: 0.5em;
   
 }
 
@@ -551,6 +551,8 @@ font-size: 1.1em;
   text-align: center;
   font-family: sans-serif;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  padding-bottom: 0;
+  margin-bottom: -5px;
 }
 
 .skills li {
@@ -659,6 +661,7 @@ font-size: 1.1em;
   text-shadow: 2px 2px 3px rgb(229, 21, 21);
   padding: 0;
   margin-bottom: -1em;
+
 
 }
 
