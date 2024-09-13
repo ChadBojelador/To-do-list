@@ -1,2 +1,3 @@
-particlesJS.load('particles-js', 'particles.json'), function() {
-  console.log('particles.js loaded - callback');}
+document.body.addEventListener('click', function() {
+  window.location.href = 'index.html'; 
+});
