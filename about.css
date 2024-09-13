@@ -1,78 +1,300 @@
-body{
+body {
   background-image: url(gif.gif);
-}
-.container{
-  display: grid;
-  margin-right: 20vw;
-  margin-left: 20vw;
-  margin-top: 10vh;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  grid-template-columns: auto 2fr;
+  font-family: 'Lily Script One', cursive;
   color: white;
-  background-color: rgb(7, 7, 26);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-.demo{
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.container-a {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr); 
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  justify-content: center;
-  align-items: center;
 
+.overall {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Adjust the fraction units as needed */
+  gap: 1em; /* Space between the columns */
+  padding: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjusted to be more flexible */
+  border: 2px solid white;
+  background-color: rgb(25, 25, 33);
+  margin-top: 1vh;
+}
+
+.demo {
+  padding: 0 1em;
+}
+
+.container-a, .container-b {
+  display: grid;
+  gap: 1em; /* Space between rows */
+  border: 2px solid white;
+  padding: 1em;
+}
+
+.container-a {
+  grid-template-rows: repeat(5, auto); /* Adjusted for flexibility */
+}
+
+.container-b {
+  grid-template-rows: repeat(4, auto);
+}
+
+.title {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  font-family: sans-serif;
+}
+
+.row1, .row2 {
+  border: 1px solid white;
+  padding: 0.4em;
 }
 #p1{
-  text-indent: 3em;
   text-align: justify;
-  padding-left: 2em;
-  padding-right: 2em;
+  text-indent: 4em;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.row1{
-  border: 1px solid white; 
+.row1 {
   text-align: center;
-  font-size: 1.3em;
-}
-.row2{
-  border: 1px solid white; 
-}
-.container-b{
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  justify-content: center;
-  align-items: center;
-
-}
-.title{
-  padding-top: 1em;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.2em; /* Adjusted for readability */
 }
 
 .row2 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin: 0.6em;
+  padding: 0em 2em; /* Adjusted padding */
+  font-size: 1.2em;
+  
+}
+.aa{
+font-size: 1.1em;
+
+ 
+}
+.symbol {
+  text-align: center;
+  font-size: 1.5vw; /* Adjusted for better visibility */
+  text-shadow: 2px 2px rgba(185, 177, 177, 0.705);
+  background-color: rgb(91, 31, 31);
+  animation: blink 2s infinite;
 }
 
-.symbol{
-  text-align: center;
-  font-size: 1vw;
-  text-shadow: 2px 2px rgba(185, 177, 177, 0.705);
-  color: white;
-  background-color: rgb(91, 31, 31);
-  padding-top: 0px;
-  animation: blink 2s infinite;
+.card {
+  position: relative;
+  width: 100%; /* Ensure the card takes the full width of its container */
+  height: 100%; /* Ensure the card takes the full height of its container */
+  perspective: 1000px; /* Perspective for 3D effect */
+  margin-top: 13%; /* Adjust margin if needed */
+}
+
+.content {
+  position: absolute;
+  width: 100%; /* Ensure content covers the entire width of the card */
+  height: 100%; /* Ensure content covers the entire height of the card */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+  font-size: 1.8vh; /* Adjusted font size */
+  background-color: rgb(25, 25, 33);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  color: white;
+}
+
+.back {
+  background-color: rgb(25, 25, 33);
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  
+  font-family: sans-serif;
+}
+.s {
+  display: flex;
+  background-color: rgb(25, 25, 33);
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  
+
+}
+
+.s p{
+  font-size: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.sss{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+.title{
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+}
+.title1{
+  background-color: rgb(25, 25, 33);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  align-items: center;
+  font-size: 2em;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+  text-align: center;
+}
+.skills {
+  background-color: rgb(25, 25, 33); /* Matching the container background color */
+  padding: 1em;
+  border: 2px solid white;
+  margin-top: 7%;
+  
+}
+
+.skills h1 {
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+}
+
+.skills li {
+  list-style-type: none;
+	font-family: sans-serif;
+}
+.bar{ /*style the bar*/
+	background-color: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{ /*style the span tag*/
+	height: 2px;
+	float: left;
+	background-color: #2187e7;
+}
+
+.html{ /*set skills and animation of html*/
+	width: 80%;
+	animation: html 2s;
+}
+
+.css{ /*set skills and animation of css*/
+	width: 93%;
+	animation: css 2s;
+}
+
+.javascript{ /*set skills and animation of javascript*/
+	width: 50%;
+	animation: javascript 2s;
+}
+
+.jquery{ /*set skills and animation of jquery*/
+	width: 30%;
+	animation: jquery 2s;
+}
+
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes css{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 93%;
+	}
+}
+
+@keyframes javascript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes jquery{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 30%;
+	}
+}
+
+.additional-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Space between rows */
+  background-color: rgb(25, 25, 33); /* Matching background color */
+  border: 2px solid white;
+  margin-right: 1em;
+  margin-left: 71.7em;
+  font-family: sans-serif;
+}
+
+.roww1, .roww2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9em;
+
+}
+
+.roww1 {
+  background-color: rgb(30, 30, 40); /* Slightly different color for differentiation */
+  text-shadow: 2px 2px 3px rgb(229, 21, 21);
+}
+
+.roww2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(35, 35, 45); /* Slightly different color for differentiation */
+  font-size: 1em;
+  margin: 0.6em;
+  padding: 0em 2em; /* Adjusted padding */
+  column-gap: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.roww2 p {
+  margin: 0.2em 0; /* Adjusted margin to reduce the gap between paragraphs */
+  padding: 0; /* Ensure no additional padding adds to the gap */
 }
